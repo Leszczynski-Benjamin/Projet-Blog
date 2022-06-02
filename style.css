@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+}
+
+.topBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #FFF;
+    padding: 30px;
+}
+
+.topBar nav {
+    float: left;
+}
+
+.topBar nav a {
+    color: grey;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0 53px;
+}
+
+.topBar nav a:hover,
+.topBar nav a.active {
+    color: #000;
+}
+
+.social {
+    float: right;
+}
+
+.social a {
+    padding: 0 12px;
+    opacity: 0.5;
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.social a:hover {
+    opacity: 1;
+}
+
+.banniere {
+    background: url(./img/header.jpg) no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    height: 527px;
+}
+
+.main {
+    float: left;
+    width: calc(100% - 375px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    position: relative;
+}
+
+.sideBar {
+    float: right;
+    background-color: lightpink;
+    width: 375px;
+    padding: 40px;
+    z-index: 1;
+    position: relative;
+}
+
+.sideBar a {
+    color: grey;
+    text-decoration: none;
+}
+
+.sideBar a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+.sideBar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 17px;
+}
+
+.sideBar li {
+    padding: 6px 0;
+}
+
+.sideBar hr {
+    background-color: grey;
+    border: none;
+    height: 1px;
+    margin: 50px 0;
+}
+
+.sideBar li:first-child {
+    padding-top: 0;
+}
+
+.sideBar li:last-child {
+    padding-bottom: 0;
+}
+
+.title-sideBar {
+    font-size: 30px;
+    color: #000;
+    margin: 15px 0;
+}
+
+.title-sideBar:first-child {
+    margin-top: 0;
+}
+
+.footer {
+    clear: both;
+}
