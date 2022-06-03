@@ -2,26 +2,30 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+html {
     margin: 0;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.87);
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
+    font-weight: 500;
 }
 
 .topBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background: #FFF;
     padding: 30px;
+    z-index: 6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.topBar nav {
-    float: left;
-}
 
 .topBar nav a {
     color: grey;
@@ -35,9 +39,6 @@ body {
     color: #000;
 }
 
-.social {
-    float: right;
-}
 
 .social a {
     padding: 0 12px;
@@ -53,8 +54,12 @@ body {
 .banniere {
     background: url(./img/header.jpg) no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: cover;
     height: 527px;
+}
+
+.body {
+    display: flex;
 }
 
 .main {
@@ -63,11 +68,71 @@ body {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     z-index: 2;
     position: relative;
+    background-color: white;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.article {
+    position: relative;
+    margin: 50px 0;
+    padding-left: 333px;
+    min-height: 203px;
+    background-color: #FFF;
+}
+
+.article hr {
+    background-color: grey;
+    border: none;
+    height: 1px;
+    margin: 50px 0;
+}
+
+.article_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 308px;
+    margin-right: 27px;
+}
+
+.article a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.article p {
+    max-height: 100px;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+.article_date {
+    font-weight: 300px;
+    color: rgba(0, 0, 0, 0.60);
+    margin-bottom: 5px;
+}
+
+.article_title {
+    font-size: 2.25rem;
+    line-height: 1.1;
+    font-family: "Cardo", serif;
+    margin: 0 0 15px 0;
+}
+
+.article_img img {
+    width: 100%;
+    height: auto;
 }
 
 .sideBar {
-    float: right;
-    background-color: lightpink;
     width: 375px;
     padding: 40px;
     z-index: 1;
@@ -122,4 +187,5 @@ body {
 
 .footer {
     clear: both;
+    padding: 30px;
 }
