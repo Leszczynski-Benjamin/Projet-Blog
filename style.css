@@ -116,7 +116,7 @@ html {
 }
 
 .article_date {
-    font-weight: 300px;
+    font-weight: 300;
     color: rgba(0, 0, 0, 0.60);
     margin-bottom: 5px;
 }
@@ -195,4 +195,80 @@ html {
     padding: 30px;
     font-weight: bold;
     text-align: center;
+}
+
+/* Média */
+
+@media screen and (max-width:1100px) {
+    .body {
+        display: block;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .main {
+        width: 100%;
+        float: none;
+    }
+
+    .main .container {
+        overflow: hidden;
+    }
+
+    .sideBar {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:865px) {
+    .topBar {
+        position: absolute;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .topBar nav,
+    .social {
+        float: none;
+        text-align: center;
+    }
+
+    .topBar nav {
+        margin-bottom: 15px;
+    }
+
+    .topBar nav a {
+        margin: 0 20px 5px 20px;
+        padding: 0;
+    }
+
+    .social a {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .article {
+        padding-left: 0;
+    }
+
+    .article_img {
+        position: static;
+        display: block;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .topBar nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banniere {
+        height: 400px;
+    }
 }
